@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TextFieldProgram extends StatefullWidget{
+class TextFieldProgram extends StatefulWidget{
     const TextFieldProgram({super.key});
 
     @override
@@ -34,7 +34,7 @@ class _TextFieldProgramState extends State<TextFieldProgram>{
                 child: Column(
                     children:[
                         TextField(
-                            controller:textController.
+                            controller:textController,
                             decoration:const InputDecoration(
                                 labelText:'Enter your Name',
                                 hintText:'Type Something...',
