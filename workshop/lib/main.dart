@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';//import package to work
 import 'screens/hello_worls.dart';
 import 'screens/snackbar.dart';
 import 'screens/textfield.dart';
+import 'screens/form_controls.dart';
 
 void main(){//entry point to code
  runApp(const MyApp());//runapp:- use to stat the application
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget{//actual app 2 types of widgets stateless[st
       theme:ThemeData(colorScheme: .fromSeed(seedColor:Colors.deepPurple)),
       //home:const HelloWorld(),//first screen to load 1st page
         //home:const SnackBarProgram(),
-        home:const TextFieldProgram(),
+        //home:const TextFieldProgram(),
+         home: const FormControlsProgram(),
     );
   }
 }
