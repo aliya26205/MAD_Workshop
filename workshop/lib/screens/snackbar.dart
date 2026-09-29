@@ -1,48 +1,48 @@
 import 'package:flutter/material.dart';
 
-class SnackbarProgram extends StatelessWidget{
-    const SnackbarProgram({super.key});
+class SnackBarProgram extends StatelessWidget {
+    const SnackBarProgram({super.key});
 
-    void showMessage(BuildContext context){
+    void showMessage(BuildContext context) {
         ScaffoldMessenger.of(context).showSnackBar(
-            const Snackbar(
-                content:Text(
-                    'Button Clicked!',
-                    style:TextStyle(fontSize:18),
+            const SnackBar(
+                content: Text(
+                    'Button Clicked',
+                    style: TextStyle(fontSize: 18), 
                 ),
-                backgroundColor:Colors.black,
+                backgroundColor: Colors.black,
             ),
         );
     }
     @override
-    Widget build(BuildContext content){
+    Widget build(BuildContext context) {
         return Scaffold(
-            backgroundColor:Colors.yellow,
-            appBar:AppBar(
-                title:const Text('Button & Snackbar'),
-                backgroundColor:Colors.yellow,
+            backgroundColor: Colors.yellow,
+            appBar: AppBar(
+                title: const Text('Button & SnackBar'),
+                backgroundColor: Colors.green,
             ),
-            body:Center(
-                child:Column(
-                    children:[
-                        SizedBox(
-                            width:200,
-                            height:60,
-                            child:ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    backgroundColor:Colors.deepPurple,
-                                    foregroundColor:Color.White,
-                                ),
-                                onPressed:(){
-                                    showMessage(context);
-                                },
-                                child:const Text(
-                                    'Click Me',
-                                    style:TextStyle(fontSize:20),
-                                ),
+            body: Center(
+                child: Column (
+                children: [
+                    SizedBox(
+                        width: 200,
+                        height: 60,
+                        child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.deepPurple,
+                                foregroundColor: Colors.white,
+                            ),
+                            onPressed: () {
+                                showMessage(context);
+                            },
+                            child: const Text(
+                                'Click Me',
+                                style: TextStyle(fontSize: 20),
                             ),
                         ),
-                    ],
+                    ),
+                ],
                 ),
             ),
         );
