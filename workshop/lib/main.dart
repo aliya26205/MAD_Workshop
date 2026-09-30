@@ -3,6 +3,7 @@ import 'screens/hello_worls.dart';
 import 'screens/snackbar.dart';
 import 'screens/textfield.dart';
 import 'screens/form_controls.dart';
+import 'screens/drawer.dart';
 
 void main(){//entry point to code
  runApp(const MyApp());//runapp:- use to stat the application
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget{//actual app 2 types of widgets stateless[st
       //home:const HelloWorld(),//first screen to load 1st page
         //home:const SnackBarProgram(),
         //home:const TextFieldProgram(),
-         home: const FormControlsProgram(),
+        // home: const FormControlsProgram(),
+        home: const DrawerPage(),
     );
   }
 }
